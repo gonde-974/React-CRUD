@@ -3,8 +3,6 @@ import { useOutletContext } from 'react-router-dom'
 
 function AccountsPage() {
     const [accounts] = useOutletContext()
-
-
     return (
         <div className='container'>
             <h1>
@@ -19,22 +17,9 @@ function AccountsPage() {
                                 <th>Email</th>
                                 <th>Phone</th>
                                 <th>City</th>
+
                             </tr>
                         </thead>
-
-                        <tbody>
-                            {accounts.map(acc => {
-                                return (
-                                    <tr key={acc.id}>
-                                        <th>{acc.ime}</th>
-                                        <th>{acc.emai}</th>
-                                        <th>{acc.phone}</th>
-                                        <th>{acc.city}</th>
-
-                                    </tr>
-                                )
-                            })}
-                        </tbody>
                     </table>
                 </div>
             </div>

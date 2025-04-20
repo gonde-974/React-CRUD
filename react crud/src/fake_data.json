@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "ime": "Aleksandar Petrovski",
+    "email": "aleksandar.petrovski@example.com",
+    "phone": "078-123-456",
+    "city": "Skopje"
+  },
+  {
+    "id": 2,
+    "ime": "Elena Jovanova",
+    "email": "elena.jovanova@example.com",
+    "phone": "070-987-654",
+    "city": "Bitola"
+  },
+  {
+    "id": 3,
+    "ime": "Kristijan Iliev",
+    "email": "kristijan.iliev@example.com",
+    "phone": "075-111-222",
+    "city": "Ohrid"
+  },
+  {
+    "id": 4,
+    "ime": "Marija Stankovska",
+    "email": "marija.stankovska@example.com",
+    "phone": "077-333-444",
+    "city": "Kumanovo"
+  },
+  {
+    "id": 5,
+    "ime": "Nikola Georgiev",
+    "email": "nikola.georgiev@example.com",
+    "phone": "072-555-666",
+    "city": "Prilep"
+  },
+  {
+    "id": 6,
+    "ime": "Simona Ristova",
+    "email": "simona.ristova@example.com",
+    "phone": "071-777-888",
+    "city": "Tetovo"
+  },
+  {
+    "id": 7,
+    "ime": "Stefan Angelov",
+    "email": "stefan.angelov@example.com",
+    "phone": "078-999-000",
+    "city": "Veles"
+  },
+  {
+    "id": 8,
+    "ime": "Ivana Kostova",
+    "email": "ivana.kostova@example.com",
+    "phone": "076-111-333",
+    "city": "Strumica"
+  },
+  {
+    "id": 9,
+    "ime": "Bojan Dimitrov",
+    "email": "bojan.dimitrov@example.com",
+    "phone": "079-444-555",
+    "city": "Gostivar"
+  },
+  {
+    "id": 10,
+    "ime": "Tamara Velinova",
+    "email": "tamara.velinova@example.com",
+    "phone": "074-666-777",
+    "city": "Kavadarci"
+  }
+]

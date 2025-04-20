@@ -21,18 +21,13 @@ function AccountsPage() {
                                 <th>City</th>
                             </tr>
                         </thead>
-
                         <tbody>
                             {accounts.map(acc => {
-                                return (
-                                    <tr key={acc.id}>
-                                        <th>{acc.ime}</th>
-                                        <th>{acc.emai}</th>
-                                        <th>{acc.phone}</th>
-                                        <th>{acc.city}</th>
+                                <tr key={acc.id}>
+                                    <th>{acc.ime}</th>
 
-                                    </tr>
-                                )
+                                </tr>
+
                             })}
                         </tbody>
                     </table>
