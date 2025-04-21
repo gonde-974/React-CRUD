@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useNavigate, useOutletContext } from 'react-router-dom'
 
 
-function AddAcountPage() {
+function EditOnePage() {
 
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
@@ -47,4 +47,4 @@ function AddAcountPage() {
     )
 }
 
-export default AddAcountPage
+export default editOnePage

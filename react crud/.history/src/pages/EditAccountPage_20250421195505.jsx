@@ -35,15 +35,13 @@ function EditAccountPage() {
                             {accounts.map(acc => {
                                 return (
                                     <tr key={acc.id}>
-                                        <td>{acc.name}</td>
+                                        <td>{acc.ime}</td>
                                         <td>{acc.email}</td>
                                         <td>{acc.phone}</td>
                                         <td>{acc.city}</td>
                                         <td>
                                             <button onClick={() => deleteAccount(acc.id)}>Delete</button>
-                                            <Link to="/editone" state={{ id: acc.id }} className='ms-3'>Edit</Link>
-
-
+                                            <Link to="/editOone" state={{ id: acc.id }} className='ms-3'>Edit</Link>
                                         </td>
 
                                     </tr>

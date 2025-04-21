@@ -11,7 +11,7 @@ function AddAcountPage() {
 
     const [accounts, setAccounts] = useOutletContext()
 
-    const navigate = useNavigate()
+    const navigate = useNavigate
 
     const handleSubmit = e => {
         e.preventDefault();

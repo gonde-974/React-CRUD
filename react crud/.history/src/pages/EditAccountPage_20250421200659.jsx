@@ -35,7 +35,7 @@ function EditAccountPage() {
                             {accounts.map(acc => {
                                 return (
                                     <tr key={acc.id}>
-                                        <td>{acc.name}</td>
+                                        <td>{acc.ime}</td>
                                         <td>{acc.email}</td>
                                         <td>{acc.phone}</td>
                                         <td>{acc.city}</td>

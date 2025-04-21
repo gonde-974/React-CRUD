@@ -24,7 +24,7 @@ const router = createBrowserRouter([
                 element: <EditAccountPage />
             },
             {
-                path: "editone",
+                path: "edit-one",
                 element: <EditOnePage />
             }
         ]

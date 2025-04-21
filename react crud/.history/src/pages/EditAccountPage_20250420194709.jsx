@@ -1,22 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
-import { useOutletContext } from 'react-router-dom'
 
 function EditAccountPage() {
-
-    const [accounts, setAccounts] = useOutletContext();
-
-    const deleteAccount = currentId => {
-        setAccounts(prevAccounts => {
-            console.log(prevAccounts);
-
-            return prevAccounts.filter(el => el.id != currentId)
-        })
-    }
     return (
         <div className='container'>
             <h1>
-                Delete and Edit
+                All Accounts
             </h1>
             <div className='row'>
                 <div className='col-10 offset-1'>
@@ -27,7 +15,6 @@ function EditAccountPage() {
                                 <th>Email</th>
                                 <th>Phone</th>
                                 <th>City</th>
-                                <th>Actions</th>
                             </tr>
                         </thead>
 
@@ -35,16 +22,10 @@ function EditAccountPage() {
                             {accounts.map(acc => {
                                 return (
                                     <tr key={acc.id}>
-                                        <td>{acc.name}</td>
-                                        <td>{acc.email}</td>
-                                        <td>{acc.phone}</td>
-                                        <td>{acc.city}</td>
-                                        <td>
-                                            <button onClick={() => deleteAccount(acc.id)}>Delete</button>
-                                            <Link to="/editone" state={{ id: acc.id }} className='ms-3'>Edit</Link>
-
-
-                                        </td>
+                                        <th>{acc.ime}</th>
+                                        <th>{acc.emai}</th>
+                                        <th>{acc.phone}</th>
+                                        <th>{acc.city}</th>
 
                                     </tr>
                                 )

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useNavigate, useOutletContext } from 'react-router-dom'
+import { useOutletContext } from 'react-router-dom'
 
 
 function AddAcountPage() {
@@ -9,23 +9,19 @@ function AddAcountPage() {
     const [phone, setPhone] = useState('')
     const [city, setCity] = useState('')
 
-    const [accounts, setAccounts] = useOutletContext()
-
-    const navigate = useNavigate()
+    const [setAccounts] = useOutletContext()
 
     const handleSubmit = e => {
         e.preventDefault();
         setAccounts(prevAccounts => {
             return [...prevAccounts, {
                 id: crypto.randomUUID(),
-                ime: name,
+                name: name,
                 email: email,
                 phone: phone,
                 city: city
             }]
         })
-
-        navigate('/')//koga ke se izvrsi funkcijata da ne vrati na stranicata so path '/'
 
     }
     return (

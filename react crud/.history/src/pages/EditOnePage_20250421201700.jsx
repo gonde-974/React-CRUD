@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useNavigate, useOutletContext } from 'react-router-dom'
 
 
-function AddAcountPage() {
+function EditOnePage() {
 
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
@@ -31,7 +31,7 @@ function AddAcountPage() {
     return (
         <div className='container'>
             <div className='row'>
-                <h1>Add Accounts</h1>
+                <h1>Edit Accounts</h1>
                 <div className='col-8 offset-2'>
                     <form onSubmit={handleSubmit}>
                         <input value={name} onChange={e => setName(e.target.value)} type="text" placeholder='name' className='form-control mb-3' />
@@ -47,4 +47,4 @@ function AddAcountPage() {
     )
 }
 
-export default AddAcountPage
+export default EditOnePage

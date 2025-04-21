@@ -6,7 +6,7 @@ import fake_data from '../fake_data.json'
 function MainLayout() {
 
     const [accounts, setAccounts] = useState(fake_data)
-
+    console.log(accounts);
 
     return (
         <div>

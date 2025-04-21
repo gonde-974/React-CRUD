@@ -1,31 +1,27 @@
 import React, { useState } from 'react'
-import { useNavigate, useOutletContext } from 'react-router-dom'
+import { useOutletContext } from 'react-router-dom'
 
 
 function AddAcountPage() {
 
-    const [name, setName] = useState('')
+    const [ime, setName] = useState('')
     const [email, setEmail] = useState('')
     const [phone, setPhone] = useState('')
     const [city, setCity] = useState('')
 
     const [accounts, setAccounts] = useOutletContext()
 
-    const navigate = useNavigate()
-
     const handleSubmit = e => {
         e.preventDefault();
         setAccounts(prevAccounts => {
             return [...prevAccounts, {
                 id: crypto.randomUUID(),
-                ime: name,
+                ime: ime,
                 email: email,
                 phone: phone,
                 city: city
             }]
         })
-
-        navigate('/')//koga ke se izvrsi funkcijata da ne vrati na stranicata so path '/'
 
     }
     return (

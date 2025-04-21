@@ -1,16 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import { useOutletContext } from 'react-router-dom'
 
 function EditAccountPage() {
 
     const [accounts, setAccounts] = useOutletContext();
 
-    const deleteAccount = currentId => {
+    const deleteAccount = id => {
         setAccounts(prevAccounts => {
-            console.log(prevAccounts);
-
-            return prevAccounts.filter(el => el.id != currentId)
+            return prevAccounts.filter(el => el.id != id)
         })
     }
     return (
@@ -35,15 +32,13 @@ function EditAccountPage() {
                             {accounts.map(acc => {
                                 return (
                                     <tr key={acc.id}>
-                                        <td>{acc.name}</td>
-                                        <td>{acc.email}</td>
+                                        <td>{acc.ime}</td>
+                                        <td>{acc.emai}</td>
                                         <td>{acc.phone}</td>
                                         <td>{acc.city}</td>
                                         <td>
                                             <button onClick={() => deleteAccount(acc.id)}>Delete</button>
-                                            <Link to="/editone" state={{ id: acc.id }} className='ms-3'>Edit</Link>
-
-
+                                            <button className='ms-3'>Edit</button>
                                         </td>
 
                                     </tr>
